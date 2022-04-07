@@ -1,0 +1,198 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 0.8rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  color: #fff;
+
+  @include Laptops() {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @include HiDPI() {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  // All media
+  .nav-logo {
+    background: url('./../images/audi-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 110px;
+    height: 50px;
+  }
+
+  // Only larger
+  .nav-main-links {
+    display: none;
+
+    @include Laptops() {
+      display: block;
+      margin-left: 10rem;
+
+      ul {
+        display: flex;
+
+        li {
+          margin: 0rem 0.4rem;
+          font-weight: 500;
+          list-style-type: none;
+          font-size: 0.9rem;
+          // color: #282828;
+          cursor: pointer;
+          background: transparent;
+          transition: background 0.4s linear;
+          padding: 0.4rem 0.8rem;
+          border-radius: 12px;
+          position: relative;
+        }
+      }
+    }
+
+    @include HiDPI() {
+      display: block;
+      margin-left: 18rem;
+
+      ul {
+        display: flex;
+
+        li {
+          margin: 0rem 0.4rem;
+          font-weight: 500;
+          list-style-type: none;
+          font-size: 0.9rem;
+          // color: #282828;
+          cursor: pointer;
+          background: transparent;
+          transition: background 0.4s linear;
+          padding: 0.4rem 0.8rem;
+          border-radius: 12px;
+          position: relative;
+        }
+      }
+    }
+  }
+
+  // Only small
+  .nav-menu {
+    button {
+      border: none;
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      border-radius: 22px;
+      letter-spacing: 0.5px;
+      font-weight: 500;
+      //   blur background
+      background: rgba(255, 255, 255, 0.7);
+      cursor: pointer;
+      color: #000;
+
+      @include Laptops {
+        display: none;
+      }
+
+      @include HiDPI {
+        display: none;
+      }
+    }
+  }
+
+  // Only larger
+  .nav-user-links-desktop {
+    display: none;
+
+    @include Laptops() {
+      display: block;
+
+      ul {
+        display: flex;
+
+        li {
+          margin: 0rem 0.4rem;
+          font-weight: 500;
+          list-style-type: none;
+          font-size: 0.9rem;
+          // color: #282828;
+          cursor: pointer;
+          background: transparent;
+          transition: background 0.4s linear;
+          padding: 0.4rem 0.8rem;
+          border-radius: 12px;
+          position: relative;
+        }
+      }
+    }
+
+    @include HiDPI() {
+      display: block;
+
+      ul {
+        display: flex;
+
+        li {
+          margin: 0rem 0.4rem;
+          font-weight: 500;
+          list-style-type: none;
+          font-size: 0.9rem;
+          // color: #282828;
+          cursor: pointer;
+          background: transparent;
+          transition: background 0.4s linear;
+          padding: 0.4rem 0.8rem;
+          position: relative;
+        }
+      }
+    }
+
+    .menu-li {
+      background: transparent;
+      transition: background ease 0.5s;
+      border-radius: 19px;
+    }
+
+    .menu-li:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+
+.m-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dropback {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 19px;
+}
+
+.dropback3 {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(237, 237, 237, 0.6);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 19px;
+}

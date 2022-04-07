@@ -1,0 +1,276 @@
+.p-c {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  z-index: 1000;
+
+  .overlay-r {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: -100vh;
+
+    .overlay-m {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      margin-top: -100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 400;
+      }
+
+      h5 {
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      .overlayy-btns {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding-top: 10rem;
+
+        @include Landscape() {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          grid-gap: 2rem;
+          width: fit-content;
+        }
+        @include Pads() {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          grid-gap: 2rem;
+          width: fit-content;
+        }
+        @include PadsPro() {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          grid-gap: 2rem;
+          width: fit-content;
+        }
+        @include Laptops() {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          grid-gap: 2rem;
+          width: fit-content;
+        }
+        @include HiDPI() {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          grid-gap: 2rem;
+          width: fit-content;
+        }
+
+        button {
+          margin: 0.5rem 0rem;
+          border-radius: 20px;
+          outline: none;
+          border: none;
+          padding: 0.8rem 0;
+          font-size: 0.8rem;
+          cursor: pointer;
+          text-transform: uppercase;
+          font-weight: 500;
+
+          @include Landscape() {
+            width: 250px;
+            font-size: 0.8rem;
+            margin: 0;
+          }
+
+          @include Pads() {
+            width: 250px;
+            margin: 0;
+          }
+
+          @include PadsPro() {
+            width: 250px;
+            margin: 0;
+          }
+
+          @include Laptops() {
+            width: 250px;
+            margin: 0;
+          }
+
+          @include HiDPI() {
+            width: 250px;
+            margin: 0;
+          }
+        }
+
+        .primary-btn {
+          background: rgba(0, 0, 0, 0.7);
+          color: #cecece;
+          transition: background 0.4s linear;
+        }
+
+        .primary-btn:hover {
+          background: rgba(0, 0, 0, 0.9);
+          color: #cecece;
+        }
+
+        .secondary-btn {
+          background: rgba(255, 255, 255, 0.7);
+          color: #282828;
+          transition: background 0.4s linear;
+        }
+
+        .secondary-btn:hover {
+          background: rgba(255, 255, 255, 0.9);
+        }
+      }
+    }
+  }
+
+  .p-cc {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+
+    .p-c-child {
+      width: 500px;
+      height: 1px;
+      background: transparent;
+    }
+  }
+
+  .q5 {
+    background: url('./../images/bgs/q5smbg.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include PadsPro() {
+      background: url('./../images/bgs/q5lgbg.webp');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @include Laptops() {
+      background: url('./../images/bgs/q5lgbg.webp');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @include HiDPI() {
+      background: url('./../images/bgs/q5lgbg.webp');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .q8 {
+    background: url('./../images/bgs/q8smbg.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include PadsPro() {
+      background: url('./../images/bgs/q8fbg.webp');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @include Laptops() {
+      background: url('./../images/bgs/q8fbg.webp');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @include HiDPI() {
+      background: url('./../images/bgs/q8fbg.webp');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .a5 {
+    background: url('./../images/bgs/a5smbg.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include Pads() {
+      background: url('./../images/bgs/a5fbg.webp');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @include PadsPro() {
+      background: url('./../images/bgs/a5fbg.webp');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @include Laptops() {
+      background: url('./../images/bgs/a5fbg.webp');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    @include HiDPI() {
+      background: url('./../images/bgs/a5fbg.webp');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.crs-parent {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-content: center;
+
+  .crs-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, auto);
+    height: 50vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+
+    div {
+      height: inherit;
+      scroll-snap-align: start;
+    }
+
+    .crs-em {
+      width: 400px;
+    }
+
+    .crs {
+      width: 850px;
+    }
+
+    .crs-active {
+      background: #eeeeee;
+    }
+  }
+}
