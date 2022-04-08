@@ -1,11 +1,9 @@
 @import './../../media-colors/mediaquerries';
-
 @import './Nav/cNav';
-
 @import './loader';
-
 @import './Info/modelInfo';
 @import './Info/yourModelContainer';
+@import './Info/checkout';
 
 // Promena layout kompozicije zbog vecih ekrana
 .model-container-large {

@@ -26,7 +26,10 @@ const Nav = ({ setIsOpen, open, setIsOpenD, openD, cName }) => {
       transition={{ delay: 0.2, duration: 0.5 }}
     >
       {/* All media */}
-      <div className='nav-logo'></div>
+      <Link to='/'>
+        <div className='nav-logo'></div>
+      </Link>
+
       {/* Only larger */}
       <div className='nav-main-links'>
         <ul>

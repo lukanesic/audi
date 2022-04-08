@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 
 // motion
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 
 // Components
 import CNav from '../components/CustomModel/Nav/CNav'
@@ -15,11 +15,13 @@ import FinalPrice from '../components/CustomModel/Info/FinalPrice'
 import SelectedModelSpecs from '../components/CustomModel/Info/SelectedModelSpecs'
 import PaymentMethod from '../components/CustomModel/Info/PaymentMethod'
 import CashPayment from '../components/CustomModel/Info/CashPayment'
+import Checkout from '../components/CustomModel/Info/Checkout'
 
 const Paymentpage = () => {
   const { customModel } = useSelector((state) => state.yourModel)
 
   const [activeMethod, setActiveMethod] = useState(0)
+  const [showCheckout, setShowCheckout] = useState(false)
 
   const { door, interior, paint, seat, wheel, model } = customModel
 
@@ -152,7 +154,29 @@ const Paymentpage = () => {
               />
             )}
 
-            <button className='order-btn'>Order</button>
+            <AnimatePresence>
+              {!showCheckout && (
+                <button
+                  className='order-btn'
+                  onClick={() => setShowCheckout(true)}
+                >
+                  Order
+                </button>
+              )}
+            </AnimatePresence>
+
+            <AnimatePresence>
+              {showCheckout && (
+                <motion.div
+                  initial={{ y: 100 }}
+                  animate={{ y: 0 }}
+                  exit={{ y: 100 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                >
+                  <Checkout name={model.name} />
+                </motion.div>
+              )}
+            </AnimatePresence>
           </motion.div>
         </div>
       </div>

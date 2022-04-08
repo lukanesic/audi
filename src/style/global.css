@@ -1294,6 +1294,159 @@ h2 {
   color: #686868;
 }
 
+.checkout {
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.checkout h1 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #282828;
+}
+
+.checkout .checkout-container {
+  padding: 1rem 0;
+}
+
+.checkout .checkout-container .c-c-box {
+  padding: 1rem 0;
+}
+
+.checkout .checkout-container .c-c-box label {
+  display: block;
+  width: 100%;
+  font-size: 0.9rem;
+  color: #282828;
+  font-weight: 500;
+  padding: 0 0 0.5rem 1rem;
+}
+
+.checkout .checkout-container .c-c-box input {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 22px;
+  background: whitesmoke;
+  border: 1px solid transparent;
+  outline: none;
+  -webkit-transition: border 0.3s ease;
+  transition: border 0.3s ease;
+  font-weight: 500;
+}
+
+.checkout .checkout-container .c-c-box input:focus {
+  border: 1px solid #cecece;
+}
+
+.checkout .checkout-container .c-c-box h5 {
+  padding: 1rem 0 1rem 1rem;
+  color: #282828;
+  font-weight: 500;
+}
+
+.checkout .checkout-container .c-c-box .phone-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkout .checkout-container .c-c-box .phone-box select {
+  width: 30%;
+  padding: 0.6rem 1rem;
+  border-radius: 22px;
+  background: whitesmoke;
+  border: 1px solid transparent;
+  outline: none;
+  -webkit-transition: border 0.3s ease;
+  transition: border 0.3s ease;
+  font-weight: 500;
+  margin-right: 2rem;
+}
+
+.checkout .checkout-container .c-c-box .phone-box input {
+  width: 70%;
+  padding: 0.6rem 1rem;
+  border-radius: 22px;
+  background: whitesmoke;
+  border: 1px solid transparent;
+  outline: none;
+  -webkit-transition: border 0.3s ease;
+  transition: border 0.3s ease;
+  font-weight: 500;
+}
+
+.checkout .checkout-container .c-c-box .phone-box input::-webkit-input-placeholder {
+  color: #cecece;
+}
+
+.checkout .checkout-container .c-c-box .phone-box input:-ms-input-placeholder {
+  color: #cecece;
+}
+
+.checkout .checkout-container .c-c-box .phone-box input::-ms-input-placeholder {
+  color: #cecece;
+}
+
+.checkout .checkout-container .c-c-box .phone-box input::placeholder {
+  color: #cecece;
+}
+
+.checkout .checkout-container .c-c-box .agree-head {
+  padding: 2rem 1rem;
+  color: #383838;
+  font-weight: 300;
+}
+
+.checkout .checkout-container .d-tdy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+}
+
+.checkout .checkout-container .d-tdy h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #383838;
+}
+
+.checkout .checkout-container h5 {
+  color: #4d4d4d;
+  font-weight: 300;
+  padding-bottom: 3rem;
+}
+
+.checkout .checkout-container h5 span {
+  color: #155fff;
+  font-weight: 500;
+}
+
+.checkout button {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 22px;
+  border: none;
+  background-color: #336dff;
+  -webkit-transition: background 0.4s linear;
+  transition: background 0.4s linear;
+  color: #f0f0f0;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.checkout button:hover {
+  background-color: #1154fc;
+}
+
 @media (min-width: 1280px) and (max-width: 1439px) {
   .model-container-large {
     width: 100%;
