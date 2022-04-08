@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react'
 import HomeLayout from '../layouts/HomeLayout'
+import { Link } from 'react-router-dom'
 
 import { AnimatePresence, motion } from 'framer-motion'
 
@@ -105,7 +106,9 @@ const Homepage = () => {
               title={'Audi A3'}
               description={'Order Online for Touchless Delivery'}
               btn1={'Order Now'}
-              btn2={'Existing Inventory'}
+              btn2={'About Model'}
+              link={'/design/a3'}
+              link2={'/a3'}
             />
           )}
         </AnimatePresence>
@@ -117,7 +120,9 @@ const Homepage = () => {
                 title={'Audi Q8'}
                 description={'Order Online for Touchless Delivery'}
                 btn1={'Order Now'}
-                btn2={'Existing Inventory'}
+                btn2={'About Model'}
+                link={'/design/q8'}
+                link2={'/q8'}
               />
             )}
           </AnimatePresence>
@@ -129,7 +134,9 @@ const Homepage = () => {
               title={'Audi A5'}
               description={'Order Online for Touchless Delivery'}
               btn1={'Order Now'}
-              btn2={'Existing Inventory'}
+              btn2={'About Model'}
+              link={''}
+              link2={''}
             />
           )}
         </AnimatePresence>
@@ -140,7 +147,7 @@ const Homepage = () => {
 
 export default Homepage
 
-const Headings = ({ title, description, btn1, btn2 }) => {
+const Headings = ({ title, description, btn1, btn2, link, link2 }) => {
   return (
     <motion.div className='overlay-r'>
       <motion.div
@@ -155,8 +162,12 @@ const Headings = ({ title, description, btn1, btn2 }) => {
           <h5>{description}</h5>
         </div>
         <div className='overlayy-btns'>
-          <button className='primary-btn'>{btn1}</button>
-          <button className='secondary-btn'>{btn2}</button>
+          <Link to={link}>
+            <button className='primary-btn'>{btn1}</button>
+          </Link>
+          <Link to={link2}>
+            <button className='secondary-btn'>{btn2}</button>
+          </Link>
         </div>
       </motion.div>
     </motion.div>

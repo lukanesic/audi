@@ -8,6 +8,7 @@ import Description2 from './../components/Model/Description2'
 import q8dimn from '../images/bgs/q8/q8dimn.jpeg'
 import q8front from '../images/bgs/q8/q8front.webp'
 import q8side from '../images/bgs/q8/q8side.webp'
+import { Link } from 'react-router-dom'
 
 const a3Spec = {
   topSpeed: '220',
@@ -163,6 +164,7 @@ const Q8 = () => {
             name={'Audi Q8'}
             specification={a3Spec}
             btn={'Order Now'}
+            link={'/design/q8'}
           />
         </div>
 
@@ -231,7 +233,10 @@ const Q8 = () => {
               </li>
             </ul>
 
-            <button>Order Now</button>
+            <Link to='/design/q8'>
+              {' '}
+              <button>Order Now</button>
+            </Link>
           </div>
         </div>
 
@@ -540,8 +545,10 @@ const Q8 = () => {
           <h1>Experience Audi Q8</h1>
 
           <div className='specs-parent'>
-            <button>Order Now</button>
-
+            <Link to='/design/q8'>
+              {' '}
+              <button>Order Now</button>
+            </Link>
             <img src={q8side} alt='' />
           </div>
         </div>

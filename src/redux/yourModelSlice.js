@@ -75,9 +75,9 @@ const initialState = {
       interiorFeautureDetails: {},
       autopilot: {},
     },
-    q5: {
+    q8: {
       basicModel: {
-        name: 'Audi Q5',
+        name: 'Audi Q8',
         estDelivery: 'May 2023',
         price: [53000, 50200],
         priceDesc: ['$53.000', '$50.200'],
@@ -89,7 +89,7 @@ const initialState = {
         },
       },
       hybridModel: {
-        name: 'Audi Q5 S Line',
+        name: 'Audi Q8 S Line',
         estDelivery: 'June 2023',
         price: [63300, 60200],
         priceDesc: ['$63.300', '$60.200'],
@@ -101,7 +101,7 @@ const initialState = {
         },
       },
       sportModel: {
-        name: 'Audi Q RS5',
+        name: 'Audi SQ8',
         estDelivery: 'November 2023',
         price: [155500, 149350],
         priceDesc: ['$155.500', '$149.350'],
@@ -116,7 +116,7 @@ const initialState = {
       paints: [
         [
           ['q5front.webp', 'q5side.webp', 'q5felna1.webp'],
-          ['q5front2.webp', '5side2.webp', 'q5felna1.webp'],
+          ['q5front2.webp', 'q5side2.webp', 'q5felna1.webp'],
           'white.jpeg',
           'Included',
           'Ibis White',
@@ -136,8 +136,8 @@ const initialState = {
         ['felnaq52.jpeg', '$2000', '20" Alu Wheels', 1200],
       ],
       interiors: [
-        ['q5interior2.webp', 'q5i2.jpeg', 'Included', 'Black Interior', 0],
-        ['q5interior1.webp', 'q5i1.jpeg', '$899', 'Red Interior', 899],
+        ['q5interior2.webp', 'q5i2.jpeg', 'Included', 'Red Interior', 0],
+        ['q5interior1.webp', 'q5i1.jpeg', '$899', 'Black Interior', 899],
       ],
       doors: [['5', 'Included', 'Sportsback', 0]],
       seats: [

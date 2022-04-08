@@ -24,11 +24,15 @@ const DSlider = ({ carPath, selectedCar, selectedInterior }) => {
   const [[page, direction], setPage] = useState([0, 0])
 
   useEffect(() => {
-    if (isRimsIntersecting) {
+    if (!isRimsIntersecting) {
+      setPage([0, 0])
+    } else {
       setPage([2, 0])
     }
 
-    if (isInteriorIntersecting) {
+    if (!isInteriorIntersecting) {
+      setPage([0, 0])
+    } else {
       dispatch(rimsIntersecting(false))
       setPage([3, 0])
     }

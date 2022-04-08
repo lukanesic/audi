@@ -10,6 +10,7 @@ import Description2 from './../components/Model/Description2'
 import safety from './../images/bgs/a3/a3dimn.jpeg'
 import a3config from './../images/bgs/a3/a3config.webp'
 import a3test from './../images/bgs/models/side/a3sideblack.png'
+import { Link } from 'react-router-dom'
 
 const A3 = () => {
   const ref = useRef()
@@ -165,6 +166,7 @@ const A3 = () => {
             name={'Audi A3'}
             specification={a3Spec}
             btn={'Order Now'}
+            link={'/design/a3'}
           />
         </div>
 
@@ -233,7 +235,9 @@ const A3 = () => {
               </li>
             </ul>
 
-            <button>Order Now</button>
+            <Link to='/design/a3'>
+              <button>Order Now</button>
+            </Link>
           </div>
         </div>
 
@@ -542,7 +546,9 @@ const A3 = () => {
           <h1>Experience Audi A3</h1>
 
           <div className='specs-parent'>
-            <button>Order Now</button>
+            <Link to='/design/a3'>
+              <button>Order Now</button>
+            </Link>
 
             <img src={a3test} alt='' />
           </div>

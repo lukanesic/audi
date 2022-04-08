@@ -1,7 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
-const Description1 = ({ name, specification, btn }) => {
+const Description1 = ({ name, specification, btn, link }) => {
   const { topSpeed, fuel, oneToHund } = specification
 
   const variants = {
@@ -63,7 +64,9 @@ const Description1 = ({ name, specification, btn }) => {
             <h6>0-100km/h</h6>
           </div>
         </motion.div>
-        <button>{btn}</button>
+        <Link to={link}>
+          <button>{btn}</button>
+        </Link>
       </motion.div>
     </div>
   )
