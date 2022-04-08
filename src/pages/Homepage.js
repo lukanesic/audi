@@ -81,7 +81,7 @@ const Homepage = () => {
   return (
     <HomeLayout>
       <div className='p-c'>
-        <div className='p-cc q5'>
+        <div className='p-cc a3'>
           <div className='p-c-child' ref={ref1} />
         </div>
 
@@ -102,7 +102,7 @@ const Homepage = () => {
         <AnimatePresence>
           {m1 && (
             <Headings
-              title={'Audi Q5'}
+              title={'Audi A3'}
               description={'Order Online for Touchless Delivery'}
               btn1={'Order Now'}
               btn2={'Existing Inventory'}

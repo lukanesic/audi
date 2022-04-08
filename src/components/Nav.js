@@ -9,7 +9,7 @@ const Nav = ({ setIsOpen, open, setIsOpenD, openD, cName }) => {
   const navMainLinks = [
     'A3',
     'Q8',
-    'Q4',
+    'A5',
     'e-tron',
     'Solar Roof',
     'Solar Panels',

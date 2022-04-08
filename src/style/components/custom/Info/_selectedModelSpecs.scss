@@ -1,0 +1,14 @@
+.selected-model-specs {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.8rem 0;
+
+    h4 {
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+  }
+}

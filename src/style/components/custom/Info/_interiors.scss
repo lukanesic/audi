@@ -1,0 +1,67 @@
+h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.interior-selector {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+
+  .interior-border {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    background: transparent;
+    border: 2px solid transparent;
+    transition: border 0.6s linear;
+
+    .interior {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      position: relative;
+      cursor: pointer;
+      background-color: #000;
+    }
+
+    .black {
+      background: url('./../images/bgs/models/interior/interior2.jpeg');
+      background-position: center;
+      background-size: cover;
+    }
+
+    .red {
+      background: url('./../images/bgs/models/interior/interior1.jpeg');
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  .show {
+    border: 2px solid blue;
+  }
+}
+
+.interior-info {
+  text-align: center;
+  margin: 1.5rem 0;
+  margin-bottom: 5rem;
+
+  h3 {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-weight: 500;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+}

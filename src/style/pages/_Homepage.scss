@@ -150,32 +150,11 @@
     }
   }
 
-  .q5 {
-    background: url('./../images/bgs/q5smbg.webp');
+  .a3 {
+    background: url('./../images/bgs/a3/a3.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
-    @include PadsPro() {
-      background: url('./../images/bgs/q5lgbg.webp');
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
-    @include Laptops() {
-      background: url('./../images/bgs/q5lgbg.webp');
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
-    @include HiDPI() {
-      background: url('./../images/bgs/q5lgbg.webp');
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
   }
 
   .q8 {

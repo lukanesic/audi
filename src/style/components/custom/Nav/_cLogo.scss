@@ -1,0 +1,23 @@
+.c-logo {
+  //   @include Laptops() {
+  //     position: fixed;
+  //     top: 0;
+  //     width: 100%;
+  //   }
+
+  //   @include HiDPI() {
+  //     position: fixed;
+  //     top: 0;
+  //     width: 100%;
+  //   }
+  z-index: 130;
+
+  .logo {
+    background: url('./../images/audi-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90px;
+    height: 40px;
+  }
+}

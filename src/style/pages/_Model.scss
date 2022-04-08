@@ -9,11 +9,43 @@
   }
 
   .model-a3 {
-    background: url('./../images/bgs/a3/a3.jpeg');
+    background: url('./../images/bgs/a3/a3-sm-bg.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+
+    @include Pads() {
+      background: url('./../images/bgs/a3/a3-lg-bg.jpeg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+    }
+
+    @include PadsPro() {
+      background: url('./../images/bgs/a3/a3-lg-bg.jpeg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+    }
+
+    @include Laptops() {
+      background: url('./../images/bgs/a3/a3-lg-bg.jpeg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+    }
+
+    @include HiDPI() {
+      background: url('./../images/bgs/a3/a3-lg-bg.jpeg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+    }
   }
 
   .model-s3 {

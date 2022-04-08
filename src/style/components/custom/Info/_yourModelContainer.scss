@@ -1,0 +1,19 @@
+.your-model-h2 {
+  margin: 0;
+}
+
+.your-model-container {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+
+  .your-model-right {
+    text-align: right;
+  }
+  h6 {
+    margin: 0.8rem 0rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(104, 104, 104);
+  }
+}

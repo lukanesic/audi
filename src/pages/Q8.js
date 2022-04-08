@@ -88,7 +88,7 @@ const showAnimation2 = {
     scale: 1,
     transition: {
       duration: 1,
-      delay: 1.2,
+      delay: 0.5,
     },
   },
   exit: {

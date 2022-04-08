@@ -1,0 +1,28 @@
+.final-price {
+  margin-top: 1rem;
+  .final-price-container {
+    h6 {
+      margin: 0.8rem 0rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: rgb(68, 68, 68);
+    }
+
+    .final-price-left {
+      width: 50%;
+    }
+    .final-price-right {
+      width: 50%;
+      text-align: right;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: rgb(104, 104, 104);
+      margin: 0.5rem 0;
+    }
+
+    display: flex;
+    justify-content: space-between;
+  }
+}
