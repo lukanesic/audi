@@ -162,7 +162,7 @@ export const yourModelSlice = createSlice({
   initialState,
   reducers: {
     fetchModel: (state, { payload }) => {
-      console.log(payload)
+      // console.log(payload)
     },
     createYourCustomModel: (state, { payload }) => {
       state.customModel = payload

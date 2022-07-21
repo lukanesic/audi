@@ -25,8 +25,6 @@ const Paymentpage = () => {
 
   const { door, interior, paint, seat, wheel, model } = customModel
 
-  console.log(customModel)
-
   const vehiclePrice =
     model.price +
     interior.priceToCalc +
