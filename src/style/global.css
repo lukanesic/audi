@@ -1607,6 +1607,7 @@ h2 {
       scroll-snap-type: y mandatory;
   -webkit-scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  overflow-x: hidden;
   z-index: 1000;
 }
 
@@ -1819,6 +1820,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   padding: 5rem 0;
+  overflow-x: hidden;
 }
 
 .p-c .p-cc .p-c-child {
