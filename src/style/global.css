@@ -1605,6 +1605,7 @@ h2 {
   height: 100vh;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
+  -webkit-scroll-snap-type: y mandatory;
   overflow-y: scroll;
   z-index: 1000;
 }
@@ -1803,6 +1804,7 @@ h2 {
 .p-c .p-cc {
   height: 100vh;
   scroll-snap-align: start;
+  -webkit-scroll-snap-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

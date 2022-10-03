@@ -1,6 +1,7 @@
 .p-c {
   height: 100vh;
   scroll-snap-type: y mandatory;
+  -webkit-scroll-snap-type: y mandatory;
   overflow-y: scroll;
   z-index: 1000;
 
@@ -137,6 +138,7 @@
   .p-cc {
     height: 100vh;
     scroll-snap-align: start;
+    -webkit-scroll-snap-align: start;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
