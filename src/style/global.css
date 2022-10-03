@@ -3175,4 +3175,55 @@ h2 {
   background: #fff !important;
   color: #000 !important;
 }
+
+.not-found {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.not-found h1 {
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+@media (min-width: 735px) and (max-width: 1023px) {
+  .not-found h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .not-found h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .not-found h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .not-found h1 {
+    font-size: 3rem;
+  }
+}
+
+.not-found button {
+  width: 300px;
+  margin: 2rem auto 0;
+  display: block;
+  padding: 1rem;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background: #282828;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 /*# sourceMappingURL=global.css.map */

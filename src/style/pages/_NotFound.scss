@@ -1,0 +1,38 @@
+.not-found {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: center;
+
+    @include Pads() {
+      font-size: 3rem;
+    }
+    @include PadsPro() {
+      font-size: 3rem;
+    }
+    @include Laptops() {
+      font-size: 3rem;
+    }
+    @include HiDPI() {
+      font-size: 3rem;
+    }
+  }
+
+  button {
+    width: 300px;
+    margin: 2rem auto 0;
+    display: block;
+    padding: 1rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: #282828;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}

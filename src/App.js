@@ -6,6 +6,7 @@ import Q8 from './pages/Q8'
 import A3 from './pages/A3'
 import CreateModelPage from './pages/CreateModelPage'
 import Paymentpage from './pages/Paymentpage'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path='/a3' exact element={<A3 />} />
       <Route path='/design/:model' exact element={<CreateModelPage />} />
       <Route path='/design/payment' exact element={<Paymentpage />} />
+      <Route path='*' element={<NotFound />} />
     </Routes>
   )
 }
