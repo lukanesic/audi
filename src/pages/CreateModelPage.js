@@ -194,7 +194,6 @@ const CreateModelPage = () => {
           />
           <motion.div
             className='model-info'
-            className='model-info'
             variants={modelInfoVariants}
             initial='enter'
             animate='animate'

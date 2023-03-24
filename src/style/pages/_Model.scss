@@ -499,12 +499,12 @@
       }
 
       @include Laptops() {
-        width: 50%;
+        width: 300px !important;
         margin: 0 auto;
       }
 
       @include HiDPI() {
-        width: 50%;
+        width: 300px;
         margin: 0 auto;
       }
 

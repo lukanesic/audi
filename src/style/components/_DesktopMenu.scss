@@ -62,7 +62,7 @@
       margin: 0.3rem 0;
       font-size: 1.1rem;
       color: #282828;
-      cursor: pointer;
+      cursor: no-drop;
       background: transparent;
       transition: background 0.4s linear;
       padding: 0.4rem 0.8rem;
@@ -75,6 +75,7 @@
     a {
       text-decoration: none;
       color: #282828;
+      cursor: no-drop;
     }
   }
 }
